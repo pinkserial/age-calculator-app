@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/pinkserial/age-calculator-app](https://github.com/pinkserial/age-calculator-app)
-- Live Site URL: [http://pinkserial.github.io/age-calculator-app](http://pinkserial.github.io/age-calculator-app)
+- Live Site URL: [http://pinkserial.github.io/age-calculator-app](https://pinkserial.github.io/age-calculator-app)
 
 ## My process
 
