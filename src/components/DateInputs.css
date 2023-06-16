@@ -1,0 +1,90 @@
+form .input__date__items {
+  display: flex;
+  gap: 35px;
+}
+
+form .input__date__items .input__date__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form .input__date__items .input__date__item label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+
+form .input__date__items .input__date__item input {
+  font-size: 1.6rem;
+  width: 145px;
+  padding: 15px;
+  font-weight: bold;
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+}
+
+form:invalid .input__date__items .input__date__item input {
+  border: 1px solid var(--color-primary-error);
+}
+
+form .input__date__items .input__date__item input:invalid + p {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+form
+  .input__date__items
+  .input__date__item
+  input:invalid
+  + p.day__error::before {
+  content: "Must be a valid day";
+}
+
+form
+  .input__date__items
+  .input__date__item
+  input:placeholder-shown
+  + p.day__error::before {
+  content: "This field is required";
+}
+
+form
+  .input__date__items
+  .input__date__item
+  input:invalid
+  + .month__error::before {
+  content: "Must be a valid month";
+}
+
+form
+  .input__date__items
+  .input__date__item
+  input:placeholder-shown
+  + .month__error::before {
+  content: "This field is required";
+}
+
+form
+  .input__date__items
+  .input__date__item
+  input:invalid
+  + .year__error::before {
+  content: "Must be in the post";
+  color: var(--color-primary-error);
+}
+
+form
+  .input__date__items
+  .input__date__item
+  input:placeholder-shown
+  + .year__error::before {
+  content: "This field is required";
+}
+
+form .input__date__items .input__date__item input:focus {
+  border: 1px solid var(--light-grey);
+  outline: 1px solid var(--color-primary);
+  caret-color: var(--color-primary);
+}

@@ -1,0 +1,18 @@
+main {
+  width: 770px;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 20px;
+  border-bottom-right-radius: 200px;
+  background-color: var(--color-background);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form:invalid {
+  color: var(--color-primary-error);
+}
+
